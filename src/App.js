@@ -1,23 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 //Import Component
 import TweetList from "./components/TweetList";
 import CreateTweet from "./components/CreateTweet";
 
 function App() {
-  //here is the place to write code
-  const name = "Dev Ed";
-  const message = "I went to sleep today wow.";
-  //Create our functions
-  const sayHelloHandler = (e) => {
-    console.log(`Hello`);
-    console.log(e);
-  };
+  const [name, setName] = useState("Dev Ed");
+  const message = "message";
   return (
     <div>
-      <h1>Hello React</h1>
-      {/* <CreateTweet /> */}
-      {/* <TweetList name={name} message={message} /> */}
-      <button onClick={sayHelloHandler}>Click</button>
+      <CreateTweet />
+      <TweetList name={name} message={message} />
     </div>
   );
 }
