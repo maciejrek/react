@@ -11,6 +11,7 @@ const TweetList = ({ name, tweets, setTweets }) => {
           tweet={tweet}
           tweets={tweets}
           setTweets={setTweets}
+          key={tweet.id}
         />
       ))}
     </div>
