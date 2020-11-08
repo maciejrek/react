@@ -1,6 +1,6 @@
 import React from "react";
 //Import Component
-import Tweet from "./components/Tweet";
+import TweetList from "./components/TweetList";
 import CreateTweet from "./components/CreateTweet";
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
     <div>
       <h1>Hello React</h1>
       <CreateTweet />
-      <Tweet name={name} message={message} />
+      <TweetList name={name} message={message} />
     </div>
   );
 }
